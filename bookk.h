@@ -10,7 +10,7 @@ void Inputbook(Book mas[], const int size)
 	setlocale(0, "rus");
 	for (int i = 0; i < size; i++)
 	{
-		cout << "Äàííûå êíèãè " <<i+1<< endl;
+		cout << "Ð”Ð°Ð½Ð½Ñ‹Ðµ ÐºÐ½Ð¸Ð³Ð¸ " <<i+1<< endl;
 		mas[i].Inbook();
 		system("cls");
 	}
@@ -19,10 +19,10 @@ void Inputbook(Book mas[], const int size)
 void Out_book(Book mas[], const int size)
 {
 	setlocale(0, "rus");
-	cout << "\tÁèáëèîòåêà" << endl;
+	cout << "\tÐ‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°" << endl;
 	for (int i = 0; i < size; i++)
 	{
-		cout << "Äàííûå êíèãè " <<i+1<< endl;
+		cout << "Ð”Ð°Ð½Ð½Ñ‹Ðµ ÐºÐ½Ð¸Ð³Ð¸ " <<i+1<< endl;
 		cout << "\n";
 		mas[i].Outbook();
 		cout << "\n\n";
@@ -34,39 +34,39 @@ void Outboook(Book mas[], const int size)
 	bool mist=false;
 	do
 	{
-	cout << "\t\tÂâåäèòå íàçâàíèå ôèëüòðà " << endl;
+	cout << "\t\tÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð° " << endl;
 	cout << "\tname / avtor / genre / publishing / year  " << endl;
 	cin >> x;
 	if (x == "name") {
-		cout << " Íàçâàíèå êíèã " << endl;
+		cout << " ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ½Ð¸Ð³ " << endl;
 		for (int i = 0; i < size; i++)
 		{
 			cout << mas[i].name << endl;
 		}
 	}
 	else if (x == "avtor") {
-		cout << " Àâòîðû  êíèã " << endl;
+		cout << " ÐÐ²Ñ‚Ð¾Ñ€Ñ‹ ÐºÐ½Ð¸Ð³ " << endl;
 		for (int i = 0; i < size; i++)
 		{
 			cout << mas[i].avtor << endl;
 		}
 	}
 	if (x == "genre") {
-		cout << " Æàíð êíèã " << endl;
+		cout << " Ð–Ð°Ð½Ñ€Ñ‹ ÐºÐ½Ð¸Ð³ " << endl;
 		for (int i = 0; i < size; i++)
 		{
 			cout << mas[i].genre << endl;
 		}
 	}
 	if (x == "publishing") {
-		cout << " Èçäàòåëüñòâà êíèã " << endl;
+		cout << " Ð˜Ð·Ð´Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð° ÐºÐ½Ð¸Ð³ " << endl;
 		for (int i = 0; i < size; i++)
 		{
 			cout << mas[i].publishing << endl;
 		}
 	}
 	if (x == "year") {
-		cout << " Ãîäû èçäàíèÿ êíèã " << endl;
+		cout << " Ð“Ð¾Ð´ Ð²Ñ‹Ð¿ÑƒÑÐºÐ° ÐºÐ½Ð¸Ð³ " << endl;
 		for (int i = 0; i < size; i++)
 		{
 			cout << mas[i].year << endl;
@@ -74,7 +74,7 @@ void Outboook(Book mas[], const int size)
 	}
 	if (x != "name" && x != "avtor" && x != "genre" && x != "publishing" && x != "year")
 	{
-		cout << "\tÍåïðàâèëüíûé ââîä\n \tÏîâòîðèòå ââîä\n";
+		cout << "\tÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´\n \tÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´\n";
 		mist=true;
 	} else{
 		mist = false;
@@ -85,9 +85,9 @@ void Outboook(Book mas[], const int size)
 void Redact(Book mas[], const int size)
 {
 	int num;
-	cout << "\n\tÂûáèðåòå îäíó èç " << size << " êíèã äëÿ ðåäàêòèðîâàíèÿ  \n";
+	cout << "\n\tÐ’Ñ‹Ð±Ð¸Ñ€ÐµÑ‚Ðµ Ð¾Ð´Ð½Ñƒ Ð¸Ð· " << size << " ÐºÐ½Ð¸Ð³ Ð´Ð»Ñ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ  \n";
 	cin >> num;
-	cout << "\n\tÂíåñèòå èçìåíåíèÿ\n" << endl;
+	cout << "\n\tÐ’Ð½ÐµÑÐ¸Ñ‚Ðµ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ\n" << endl;
 	mas[num-1].Inbook();
 	
 }
