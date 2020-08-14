@@ -4,11 +4,11 @@
 void Book::Outbook()
 {
 	setlocale(0, "");
-	cout << "Íàçâàíèå êíèãè " << name << endl;
-	cout << "Àâòîð êíèãè  " << avtor << endl;
-	cout << "Æàíð êíèãè  " << genre << endl;
-	cout << "Èçäàòåëüñòâî êíèãè  " << publishing << endl;
-	cout << "Ãîä èçäàíèÿ  " << year << endl;
+	cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ½Ð¸Ð³Ð¸ " << name << endl;
+	cout << "ÐÐ²Ñ‚Ð¾Ñ€ ÐºÐ½Ð¸Ð³Ð¸  " << avtor << endl;
+	cout << "Ð–Ð°Ð½Ñ€ ÐºÐ½Ð¸Ð³Ð¸  " << genre << endl;
+	cout << "Ð˜Ð·Ð´Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾ ÐºÐ½Ð¸Ð³Ð¸  " << publishing << endl;
+	cout << "Ð“Ð¾Ð´ Ð¸Ð·Ð´Ð°Ð½Ð¸Ñ  " << year << endl;
 }
 
 
@@ -16,11 +16,11 @@ void Book::Outbook()
 void Book::Inbook()
 {
 	setlocale(0, "");
-	cout << "Ââåäèòå íàçâàíèå êíèãè "; cin >> name; 
-	cout << "Ââåäèòå àâòîðà êíèãè  "; cin >> avtor;
-	cout << "Ââåäèòå æàíð êíèãè  "; cin >> genre;
-	cout << "Ââåäèòå èçäàòåëüñòâî êíèãè  "; cin >> publishing;
-	cout << "Ââåäèòå ãîä èçäàíèÿ êíèãè  ";cin >> year;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ½Ð¸Ð³Ð¸ "; cin >> name; 
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð°Ð²Ñ‚Ð¾Ñ€Ð° ÐºÐ½Ð¸Ð³Ð¸  "; cin >> avtor;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¶Ð°Ð½Ñ€ ÐºÐ½Ð¸Ð³Ð¸  "; cin >> genre;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð·Ð´Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾ ÐºÐ½Ð¸Ð³Ð¸  "; cin >> publishing;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð³Ð¾Ð´ Ð¸Ð·Ð´Ð°Ð½Ð¸Ñ ÐºÐ½Ð¸Ð³Ð¸  ";cin >> year;
 }
 
 
