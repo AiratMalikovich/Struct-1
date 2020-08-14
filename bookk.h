@@ -7,7 +7,7 @@ using namespace std;
 
 void Inputbook(Book mas[], const int size)
 {
-	setlocale(0, "rus");
+	setlocale(LC_ALL, "rus");
 	for (int i = 0; i < size; i++)
 	{
 		cout << "Данные книги " <<i+1<< endl;
@@ -18,7 +18,7 @@ void Inputbook(Book mas[], const int size)
 
 void Out_book(Book mas[], const int size)
 {
-	setlocale(0, "rus");
+	setlocale(LC_ALL, "rus");
 	cout << "\tБиблиотека" << endl;
 	for (int i = 0; i < size; i++)
 	{
@@ -30,6 +30,7 @@ void Out_book(Book mas[], const int size)
 }
 void Outboook(Book mas[], const int size)
 {
+	setlocale(LC_ALL, "Rus");
 	string x;
 	bool mist=false;
 	do
@@ -84,6 +85,7 @@ void Outboook(Book mas[], const int size)
 
 void Redact(Book mas[], const int size)
 {
+	setlocale(LC_ALL, "Rus");
 	int num;
 	cout << "\n\tВыбирете одну из " << size << " книг для редактирования  \n";
 	cin >> num;

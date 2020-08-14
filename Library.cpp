@@ -7,6 +7,7 @@ using namespace std;
 
 int main()
 {
+	setlocale(LC_ALL, "Rus");
 	const int size = 3;
 	Book book[size];
 
